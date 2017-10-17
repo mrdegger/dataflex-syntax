@@ -1,6 +1,6 @@
 'comment': 'Dataflex Syntax'
 'fileTypes': [
-  'pkg', 'dg', 'vw', 'rpt', 'dd', 'sl', 'vt', 'src', 'inc', 'cm'
+  'pkg', 'dg', 'vw', 'rpt', 'dd', 'sl', 'vt', 'src', 'inc', 'cm', 'prn'
 ]
 'scopeName' : 'source.dataflex'
 'name': 'DataFlex'
