@@ -1,0 +1,11 @@
+{
+  "description": "Syntax to DataFlex-Files.",
+  "homepage": "",
+  "keywords": [
+    "df",
+    "dataflex"
+  ],
+  "license": "MIT",
+  "name": "dfhighlight",
+  "version": "0.0.1"
+}

@@ -1,0 +1,43 @@
+'comment': 'Dataflex Syntax'
+'fileTypes': [
+  'pkg', 'dg', 'vw', 'rpt', 'dd', 'sl', 'vt', 'src', 'inc', 'cm'
+]
+'scopeName' : 'source.dataflex'
+'name': 'DataFlex'
+
+'patterns': [
+  {
+    'match': '//.*'
+    'name': 'comment'
+  }
+  {
+    'match': '\\b(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))\\b'
+    'name': 'constant.numeric.dataflex'
+  }
+  {
+    'match': '(?i)\\b(Set|get|Move|to|Append|Use|For|Until|Repeat|Loop|Send|Register_Object|Cd_End_Object|Local|Constrain|Open|is|Property|Clear|While|Write|Channel|Direct_Output|Close_Output|Append_Output|WriteLn|Case|Showln|Array|Function_Return|DfWriteLn|DFWrite|DFWritePos|DFWriteLnPos|DFFontSize|DFWriteBmp|Get_Profile_String|DFFont|Read|Readln|Indicate|of|Direct_input|Close_Input|Increment|Trim|#Include|Forward|Printerconfiguration|Returns|Public|External_Function|Left|Right|Trim|DFWriteLine|Private|Field|File_Field|Subtract|Add|From|DFWriteRect|Define|Enum_List|End_Enum_List|DFBeginHeader|DFHeaderPos|DFHeaderFrame|DFRightMargin|DFTopMargin|DFLeftMargin|DFBottomMargin|Report_Main_File|Report_Index|Report_Breaks|Find|by|DFLineCheck|DFEndHeader|a|an|DFHeaderWrap|Deferred_View|Self|File_Exist|Relate|ByRef|Delegate|Global_Variable|Cd_Popup_Object)\\b'
+    'name': 'keyword.other.special-method'
+  }
+  {
+    'match': '(?i)\\b(if|begin|else|end|case)\\b'
+    'name': 'keyword.other.special-method'
+  }
+  {
+    'match': '(?i)\\b(integer|string|number|boolean|date|datetime|handle|variant)\\b'
+    'name': 'variable'
+  }
+  {
+    'match': '(?i)\\b(function|procedure|object|class|end_procedure|end_function|end_object|end_class)\\b'
+    'name': 'entity.name.function'
+  }
+  {
+    'begin': '\''
+    'end': '\''
+    'name': 'string.quoted.single.mylanguage'
+  }
+  {
+    'begin': '"'
+    'end': '"'
+    'name': 'string.quoted.single.mylanguage'
+  }
+]
